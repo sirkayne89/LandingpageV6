@@ -1,189 +1,65 @@
-/* Custom styles */
-:root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-  font-family: 'Arial', sans-serif;
-  padding-top: 76px;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Navbar styles */
+img {
+  max-width: 150px;
+  width: 100%;
+}
+
 .navbar {
-  background-color: transparent;
-  transition: all 0.3s ease;
-  box-shadow: none;
-}
-
-.navbar.scrolled {
-  background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.navbar-brand {
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: white !important;
-  transition: color 0.3s ease;
-}
-
-.navbar.scrolled .navbar-brand {
-  color: var(--primary-color) !important;
+  background-color: #3e4455;
 }
 
 .nav-link {
-  font-weight: 500;
-  padding: 0.5rem 1rem !important;
-  transition: color 0.3s ease;
-  color: white !important;
-}
-
-.navbar.scrolled .nav-link {
-  color: #333 !important;
-}
-
-.navbar.scrolled .nav-link:hover {
-  color: var(--primary-color) !important;
-}
-
-.navbar-toggler {
-  border-color: rgba(255,255,255,0.5);
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.navbar.scrolled .navbar-toggler {
-  border-color: rgba(0,0,0,0.1);
-}
-
-.navbar.scrolled .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-/* Hero section */
-.hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/random/1920x1080/?business') no-repeat center center;
-  background-size: cover;
-  height: 100vh;
-  color: white;
-  margin-top: -76px;
-}
-
-.hero h1 {
-  font-size: 3.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.hero .lead {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-/* Section styles */
-section {
-  padding: 80px 0;
-}
-
-h2 {
-  position: relative;
-  padding-bottom: 20px;
-  margin-bottom: 40px;
-}
-
-h2::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background-color: var(--primary-color);
-}
-
-/* Card styles */
-.card {
-  border: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-}
-
-.card i {
-  color: var(--primary-color);
-}
-
-/* Client logo styles */
-.client-logo {
-  height: 100px;
-  background-color: #f8f9fa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  transition: transform 0.3s ease;
-}
-
-.client-logo:hover {
-  transform: scale(1.05);
-}
-
-/* Contact form styles */
-.form-control {
-  padding: 0.8rem;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-}
-
-.form-control:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
-  border-color: var(--primary-color);
-}
-
-/* Button styles */
-.btn-primary {
-  padding: 0.8rem 2rem;
-  border-radius: 30px;
-  text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
+  color: black;
 }
 
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,123,255,0.3);
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .hero h1 {
-      font-size: 2.5rem;
-  }
-  
-  .hero .lead {
-      font-size: 1.2rem;
-  }
-  
-  section {
-      padding: 60px 0;
-  }
+.dropdown > .dropdown-menu {
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
 }
 
-@media (max-width: 576px) {
-  .hero h1 {
-      font-size: 2rem;
+.fa-bars {
+  font-size: 2rem;
+}
+
+.fa-circle-xmark {
+  font-size: 2.5rem;
+}
+
+#welcome {
+  background-color: #eaeae9;
+  color: #3e4455;
+}
+
+@media (min-width: 992px) {
+  .dropdown > .dropdown-menu {
+    visibility: hidden;
+    opacity: 0;
+    top: 100%;
+    display: block;
+    transition: all 0.1s ease-out;
   }
-  
-  .client-logo {
-      height: 80px;
+
+  .dropdown:hover > .dropdown-menu {
+    padding: 20px 0;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .dropdown-item:hover {
+    color: #fff;
+    background-color: black;
   }
 }
