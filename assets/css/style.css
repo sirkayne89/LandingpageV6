@@ -1,65 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root {
+    --primary: #3e4455;
+    --secondary: #646b7a;
+    --secondary-alt: #ffd700;
+    --tertiary: #1c1f26;
+    --accent: #00bcd4;
+    --accent-alt: #00ff00;
+}
+
 body {
-  font-family: "Poppins", sans-serif;
+    background-color: var(--primary);
+    color: var(--accent);
+}
+
+button {
+    background-color: var(--secondary);
+}
+
+button:hover {
+    background-color: var(--secondary-alt);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
 }
 
 img {
-  max-width: 150px;
-  width: 100%;
+    max-width: 150px;
+    width: 100%;
 }
 
 .navbar {
-  background-color: #3e4455;
+    background-color: #3e4455;
 }
 
 .nav-link {
-  font-weight: 600;
-  color: black;
+    font-weight: 600;
+    color: black;
 }
 
 .navbar-toggler:focus {
-  box-shadow: none;
+    box-shadow: none;
 }
 
 .dropdown > .dropdown-menu {
-  background-color: #fff;
-  border: none;
-  border-radius: 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
 }
 
 .fa-bars {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .fa-circle-xmark {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 #welcome {
-  background-color: #eaeae9;
-  color: #3e4455;
+    background-color: #eaeae9;
+    color: #3e4455;
 }
 
 @media (min-width: 992px) {
-  .dropdown > .dropdown-menu {
-    visibility: hidden;
-    opacity: 0;
-    top: 100%;
-    display: block;
-    transition: all 0.1s ease-out;
-  }
+    .dropdown > .dropdown-menu {
+        visibility: hidden;
+        opacity: 0;
+        top: 100%;
+        display: block;
+        transition: all 0.1s ease-out;
+    }
 
-  .dropdown:hover > .dropdown-menu {
-    padding: 20px 0;
-    display: block;
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
-  }
+    .dropdown:hover > .dropdown-menu {
+        padding: 20px 0;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+    }
 
-  .dropdown-item:hover {
-    color: #fff;
-    background-color: black;
-  }
+    .dropdown-item:hover {
+        color: #fff;
+        background-color: black;
+    }
 }
